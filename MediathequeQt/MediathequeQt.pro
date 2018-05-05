@@ -3,13 +3,14 @@ QT += network
 QT += core
 
 SOURCES += \
-    authwindow.cpp \
     main.cpp \
-    homewindow.cpp
+    homewindow.cpp \
+    authwindow.cpp
 
 HEADERS += \
-    authwindow.h \
-    homewindow.h
+    homewindow.h \
+    authwindow.h
 
 FORMS += \
-    homewindow.ui
+    homewindow.ui \
+    authwindow.ui

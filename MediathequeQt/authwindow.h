@@ -1,27 +1,25 @@
 #ifndef AUTHWINDOW_H
 #define AUTHWINDOW_H
-#include<QMainWindow>
-#include<QPushButton>
 
-namespace ui {
+#include <QMainWindow>
+
+namespace Ui {
 class AuthWindow;
 }
 
-
 class AuthWindow : public QMainWindow
 {
-
-Q_OBJECT
+    Q_OBJECT
 
 public:
     explicit AuthWindow(QWidget *parent = 0);
-
-private:
-    QPushButton *ButtonConnex;
+    ~AuthWindow();
 
 private slots:
-    void goToHomePage();
-};
+    void on_ButtonConnex_clicked();
 
+private:
+    Ui::AuthWindow *ui;
+};
 
 #endif // AUTHWINDOW_H

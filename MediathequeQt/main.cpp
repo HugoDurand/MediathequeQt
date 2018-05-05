@@ -4,8 +4,8 @@
 int main(int argc, char *argv[])
 {
    QApplication app(argc, argv);
-   AuthWindow w;
-   w.show();
+   AuthWindow window;
+   window.show();
 
    return app.exec();
 }
