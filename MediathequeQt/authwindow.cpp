@@ -7,7 +7,6 @@
 #include<QMainWindow>
 #include<iostream>
 
-
 AuthWindow::AuthWindow(QWidget *parent) : QMainWindow(parent)
 {
 

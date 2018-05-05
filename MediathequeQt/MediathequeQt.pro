@@ -4,9 +4,12 @@ QT += core
 
 SOURCES += \
     authwindow.cpp \
-    homewindow.cpp \
-    main.cpp
+    main.cpp \
+    homewindow.cpp
 
 HEADERS += \
     authwindow.h \
     homewindow.h
+
+FORMS += \
+    homewindow.ui
