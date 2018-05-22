@@ -15,11 +15,6 @@ HomeWindow::HomeWindow(QWidget *parent) :
     ui->setupUi(this);
 
 
-    //DBConnect *db = new DBConnect();
-    //QSqlQuery query;
-    //query.exec("SELECT * FROM album");
-
-
 }
 
 HomeWindow::~HomeWindow()
@@ -33,7 +28,22 @@ void HomeWindow::on_ajouter_clicked()
     item = ui->item->text();
     if(item.isEmpty())
         return;
+
     ui->listWidget->addItem(item);
+
+    //QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    //db.setDatabaseName("mediatheque.db");
+    //db.open();
+
+    //QSqlQuery query;
+    //query.exec("INSERT INTO film (titre) VALUE('"+item+"')");
+
+    //QSqlQuery query2;
+    //QString ajout = query.value(0).toString();
+    //query2.exec("SELECT titre FROM film WHERE titre = '"+ajout+"'");
+
+    //QString result = query2.value(0).toString();
+    //ui->listWidget->addItem(result);
 }
 
 void HomeWindow::on_supprimer_clicked()

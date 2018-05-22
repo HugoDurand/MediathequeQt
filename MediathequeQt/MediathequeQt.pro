@@ -1,7 +1,7 @@
 QT += widgets
 QT += network
 QT += core
-QT+=sql
+QT += sql
 
 
 SOURCES += \
