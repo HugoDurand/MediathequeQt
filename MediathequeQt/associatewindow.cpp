@@ -7,6 +7,8 @@ AssociateWindow::AssociateWindow(QString value, QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle(value);
+
+    ui->labelfilm->setText(value);
 }
 
 AssociateWindow::~AssociateWindow()

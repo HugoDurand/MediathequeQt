@@ -8,6 +8,7 @@ DetailWindow::DetailWindow(QString value,QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle(value);
+    ui->titrelabel->setText(value);
 
 }
 
