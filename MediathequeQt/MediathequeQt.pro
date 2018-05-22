@@ -2,20 +2,28 @@ QT += widgets
 QT += network
 QT += core
 QT+=sql
-TARGET = mysql
 
 
 SOURCES += \
     main.cpp \
     homewindow.cpp  \
     authwindow.cpp \
-    dbconnect.cpp
+    dbconnect.cpp \
+    editwindow.cpp \
+    associatewindow.cpp \
+    detailwindow.cpp
 
 HEADERS += \
     homewindow.h \
     authwindow.h \
-    dbconnect.h
+    dbconnect.h \
+    editwindow.h \
+    associatewindow.h \
+    detailwindow.h
 
 FORMS += \
     homewindow.ui \
-    authwindow.ui
+    authwindow.ui \
+    editwindow.ui \
+    associatewindow.ui \
+    detailwindow.ui

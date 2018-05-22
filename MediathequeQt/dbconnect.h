@@ -8,6 +8,8 @@ class DBConnect
 {
 public:
     DBConnect();
+
+    bool ok;
 };
 
 #endif // DBCONNECT_H
